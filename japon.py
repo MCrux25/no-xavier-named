@@ -1,0 +1,1 @@
+print "Japon es un país de Asia"
