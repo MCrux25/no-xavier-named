@@ -11,5 +11,5 @@ recuerda que ésta vale el "60 %" de tu calificación
 nota2 = int(input ("Segunda evaluación= ")) * 0.6
 print ("La nota que ingresaste equivale al " + str(nota2) + " %" + " de tu calificación")
 notafinal= nota1 + nota2
-print ("Tu nota final es= " + strMauri(notafinal))
+print ("Tu nota final es= " + str(notafinal))
 print ("Muchas gracias por tu esfuerzo.")
