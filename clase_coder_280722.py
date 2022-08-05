@@ -54,26 +54,43 @@
 # set6 = (set3.difference(set4))
 # print (set6)
 ######Desafio
-lista0 = [29,-5,-12,17,5,24,5,12,23,16,12,5,-12,17]
+lista = [29,-5,-12,17,5,24,5,12,23,16,12,5,-12,17]
 ##Paso 1 borrar elementos duplicados
 ##solución a
-set1 = set(lista0)
-lista1 = list(set1)
-print (lista1)
-##solución b (de muchas)
-lista1b = list(set(lista0))
-print (lista1b)
+set1 = set(lista)
+lista = list(set1)
+print (lista)
+# ##solución b (de muchas)
+# listab = list(set(lista))
+# print (lista1b)
 ##Paso 2 ordenar de mayor a menor
-lista1b.sort(reverse = True)
-print (lista1b)
+lista.sort(reverse = True)
+print (lista)
 ###Paso 3 eliminar todos los impares
-##esta respuesta va recorrer los índices de la lista y
-##cuando encuentre un impar va a eliminarlo, pero lo
-##recorre los índices, por lo que se se encuentra otro
-##impar inmediatamente no lo va a evaluar porque ese
-##va a ocupar el índice del elemento que se eliminó 
-for indice, item in enumerate(lista1b):
+##esta respuesta va recorrer los índices de la lista y ###########
+##cuando encuentre un impar va a eliminarlo, pero lo ###########
+##recorre los índices, por lo que se se encuentra otro ###########
+##impar inmediatamente no lo va a evaluar porque ese ###########
+##va a ocupar el índice del elemento que se eliminó ########### 
+# for indice, item in enumerate(lista1b):
+#     print (f'{item} ! {item%2}')
+#     if ((item%2) == 1):
+#         lista1b.pop(indice)
+# print (lista1b)
+#otra solución paso 3
+listat = []
+for item in lista:
     print (f'{item} ! {item%2}')
-    if ((item%2) == 1):
-        lista1b.pop(indice)
-print (lista1b)
+    if (item%2 != 0):
+        listat.append(item)
+set1 = set(lista)
+set2 =set(listat)
+set1.difference_update(set2)
+lista =list(set1)
+print (lista)
+#paso 4 suma los elementos de la lista
+suma = sum(lista)
+print (suma)
+#paso 5 Añadir como primer elemento de la lista la suma realizada insert(0, suma) 
+lista.insert(0,suma)
+print (lista)
