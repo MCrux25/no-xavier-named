@@ -8,9 +8,10 @@ class gatx:
         self.personality = personality
  
     def maulla(self,maullidos):        
-        print("Miau "*maullidos)
-        from playsound import playsound
-        playsound (r'C:\Users\MisaelOrtegaCruz\Documents\Personal\no-xavier-named\Personal\programa_gatx\maullido_bebe.mp3')
+        for i in maullidos:
+            print ("Miau")
+            from playsound import playsound
+            playsound (r'C:\Users\MisaelOrtegaCruz\Documents\Personal\no-xavier-named\Personal\programa_gatx\maullido_bebe.mp3')
 
     
     def camina(self, pasos):
