@@ -51,4 +51,4 @@ elif personality == "5":
 gatx1 = gatx(name,sex,type,personality)
 
 maullidos = int(input("¿Cuántas veces quiere maullar?\nIngrese un número entero:\n"))
-15gatx1.maulla(maullidos)
+gatx1.maulla(maullidos)
