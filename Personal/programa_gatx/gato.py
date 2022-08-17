@@ -6,9 +6,15 @@ class gatx:
         self.sex = sex
         self.type = type
         self.personality = personality
-    
+ 
+    import playsound
+
+
     def maulla(self,maullidos):        
         print("Miau "*maullidos)
+        from playsound import playsound
+        playsound('C:\Users\MisaelOrtegaCruz\Documents\Personal\no-xavier-named\Personal\programa_gatx\gato-cachorro-gatito-miau-.mp3')
+
     
     def camina(self, pasos):
         print(f"Caminando {pasos} pasos")
