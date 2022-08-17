@@ -7,13 +7,13 @@ class gatx:
         self.type = type
         self.personality = personality
  
-    # import playsound
+    import playsound
 
 
     def maulla(self,maullidos):        
         print("Miau "*maullidos)
-        # from playsound import playsound
-        # playsound('C:\Users\MisaelOrtegaCruz\Documents\Personal\no-xavier-named\Personal\programa_gatx\gato-cachorro-gatito-miau-.mp3')
+        from playsound import playsound
+        playsound('C:\Users\MisaelOrtegaCruz\Documents\Personal\no-xavier-named\Personal\programa_gatx\gato-cachorro-gatito-miau-.mp3')
 
     
     def camina(self, pasos):
