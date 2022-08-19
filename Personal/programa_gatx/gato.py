@@ -7,19 +7,16 @@ class gatx:
         self.type = type
         self.personality = personality
  
-    def maulla(self,maullidos):        
-        #for i in maullidos:
-        print ("Miau "*maullidos)
-            
-        from pydub import AudioSegment
-        from pydub.playback import play
-        n = maullidos
-        audio = AudioSegment.from_mp3(r'C:\Users\MisaelOrtegaCruz\Documents\Personal\no-xavier-named\Personal\programa_gatx\maullido_bebe.mp3') #your audio file
-        play(audio * n)  #Play audio 2 times
-            
-            #from playsound import playsound
-            #playsound (r'C:\Users\MisaelOrtegaCruz\Documents\Personal\no-xavier-named\Personal\programa_gatx\maullido_bebe.mp3')
+    def maulla(self,maullidos):
+        sum = 0
+        i= 1
 
-    
+        while i <= maullidos:
+            sum = sum + 1
+            i = i + 1
+            print (f"Miau {sum}")
+            from playsound import playsound
+            playsound (r'C:\\Users\\Misaldazo\\Documents\\Coder\\Personal\\programa_gatx\\maullido_bebe.mp3')
+
     def camina(self, pasos):
         print(f"Caminando {pasos} pasos")
