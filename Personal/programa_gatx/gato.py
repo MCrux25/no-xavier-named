@@ -16,7 +16,7 @@ class gatx:
             i = i + 1
             print (f"Miau {sum}")
             from playsound import playsound
-            playsound (r".\\Personal\\programa_gatx\\maullido_bebe.mp3")
+            playsound (r".\Personal\programa_gatx\maullido_bebe.mp3")
 
     def camina(self, pasos):
         print(f"Caminando {pasos} pasos")
