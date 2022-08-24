@@ -9,13 +9,13 @@ class Alumno (Persona):
         self.comision = comision
     
     def setAlumno (self):
-        with open('Coder/recursos/alumno.txt','a') as alumno:
+        with open('./recursos/alumno.txt','a') as alumno:
             alumno.write(f'{self.numEstudiante}|{self.id}|{self.comision}|\n')
             alumno.close()
         return True
 
     def getAlumno(self, numEstudiante):
-        with open('Coder/recursos/alumno.txt','r') as alumnos:
+        with open('./recursos/alumno.txt','r') as alumnos:
             for alumno in alumnos:
                 detalles = alumno.split('|')
                 if numEstudiante == detalles[0]:                

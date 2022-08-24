@@ -1,7 +1,10 @@
 import os
+import time
 os.system("cls")
 from gato import gatx
 print ("Bienvenido a este programa, con él podrá ser un gatx")
+tiempoin = time.time()
+tiempoin = int(tiempoin)
 name = input("¿Cómo te gustaría llamarte?\n")
 os.system("cls")
 sex = input("""¿Te gustaría ser gato o gata?
@@ -65,66 +68,27 @@ while options >= 0 and options <= 5:
 5: salir
 '''))
     if options == 1: 
+        os.system("cls")
         maullidos = int(input(f'¿{name} cuántos maullidos quieres hacer?\nIntroduzca un número entero:\n'))
         gatx1.maulla(maullidos)
-        os.system("cls")
     elif options == 2:
+        os.system("cls")
         pasos = int(input(f'¿{name} cuántos pasos quieres dar?\nIntroduzca un número entero:\n'))
         gatx1.camina(pasos)
-        os.system("cls")
     elif options == 3:
+        os.system("cls")
         ronroneos = int(input(f'¿{name} cuántos ronroneos quieres hacer?\nIntroduzca un número entero:\n'))
         gatx1.ronronea(ronroneos)
-        os.system("cls")
     elif options == 4:
-        print(gatx1.dormir()) #no puede dormir
-        os.system("cls")
+        os.system("cls")        
+        print(gatx1.dormir())
     elif options == 5:
-        print ('Saliendo')
         os.system("cls")
+        tiempofin = time.time()
+        tiempofin = int(tiempofin)
+        print (f'Fuiste un gato durante {tiempofin-tiempoin} segundos')
+        print ('Saliendo...')
+        print (f'Adios {name}.')
         break
-    elif options > 5: #problema de lógica
-        print ('Opción inválida')
-
-
-# 
-
-# def mostrar_menu(opciones):
-#     print(f'¿Qué te gustaría hacer {name}?')
-#     for clave in sorted(opciones):
-#         print(f' {clave}) {opciones[clave][0]}')
-
-
-# def leer_opcion(opciones):
-#     while (a := input('Opción: ')) not in opciones:
-#         print('Opción incorrecta, vuelva a intentarlo.')
-#     return a
-
-
-# def ejecutar_opcion (opcion, opciones):
-#     opciones[opcion][1]()
-
-
-# def generar_menu (opciones, opcion_salida):
-#     opcion = None
-#     while opcion != opcion_salida:
-#         mostrar_menu(opciones)
-#         opcion = leer_opcion(opciones)
-#         ejecutar_opcion(opcion, opciones)
-#         print()
-
-# def menu_principal():
-#     opciones = {
-#         '1': ('Maullar', gatx1.maulla),
-#         '2': ('Caminar', gatx1.camina),
-#         '3': ('ronronear', gatx1.ronronea),
-#         '4': ('dormir', gatx1.dormir),
-#         '5': ('Salir', salir)
-#     }
-    
-#     generar_menu(opciones, '5')
-
-# def salir ():
-#     print ('Saliendo')
-
-# menu_principal()
+    # elif options > 5: #problema de lógica
+        # print ('Opción inválida')
