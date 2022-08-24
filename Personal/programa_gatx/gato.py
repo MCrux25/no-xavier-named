@@ -61,8 +61,7 @@ class gatx:
             playsound (r"Personal\programa_gatx\recursos\gato_ronroneo.mp3")
 
     def dormir(self):
-        import time
-        import msvcrt        
+        import time, msvcrt   
         t0 = time.time()
         t0 = int(t0)
         print("DURMIENDO...")
