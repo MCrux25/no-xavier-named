@@ -59,7 +59,7 @@ gatx1 = gatx(name,sex,type,personality)
 
 options = 0
 
-while options >= 0 and options <= 5:
+while options >= 0:
     options = int(input(f'''¿{name}, qué deseas hacer?
 1: Maullar
 2: Caminar
@@ -90,5 +90,6 @@ while options >= 0 and options <= 5:
         print ('Saliendo...')
         print (f'Adios {name}.')
         break
-    # elif options > 5: #problema de lógica
-        # print ('Opción inválida')
+    elif options > 5:
+        print ('Opción inválida')
+        
