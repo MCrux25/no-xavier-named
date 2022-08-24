@@ -77,7 +77,7 @@ while options >= 0 and options <= 5:
         gatx1.ronronea(ronroneos)
         os.system("cls")
     elif options == 4:
-        gatx1.dormir
+        print(gatx1.dormir()) #no puede dormir
         os.system("cls")
     elif options == 5:
         print ('Saliendo')
