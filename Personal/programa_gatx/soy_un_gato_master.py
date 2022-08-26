@@ -1,7 +1,7 @@
 import os
 import time
 os.system("cls")
-from gato import gatx
+from recursos.gato import gatx
 print ("Bienvenido a este programa, con él podrá ser un gatx")
 tiempoin = time.time()
 tiempoin = int(tiempoin)
