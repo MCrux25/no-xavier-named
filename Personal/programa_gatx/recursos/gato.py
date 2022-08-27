@@ -58,7 +58,7 @@ class gatx:
             i = i + 1
             print (f"Prrr {sum}")            
             from playsound import playsound
-            playsound (r"sonidos/gato_ronroneo.mp3")
+            playsound (r"Personal\programa_gatx\recursos\sonidos\gato_ronroneo.mp3")
 
     def dormir(self):
         import time, msvcrt   
