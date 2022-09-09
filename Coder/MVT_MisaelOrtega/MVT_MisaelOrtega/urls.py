@@ -19,5 +19,5 @@ from MVT_MisaelOrtega.view import homie
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('homie/', homie)
+    path('', homie)
 ]
