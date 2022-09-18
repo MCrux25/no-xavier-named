@@ -6,4 +6,12 @@ class familiar(models.Model):
     nacimiento = models.DateField()
 
     def __str__(self):
-        return self.nombre, self.suerte
+        return self.nombre
+
+class suenios(models.Model):
+    suenio = models.CharField(max_length=100)
+    pseudonimo = models.CharField(max_length=30)
+    fecha = models.DateField()
+
+    def __str__(self):
+        return self.pseudonimo
