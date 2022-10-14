@@ -5,7 +5,7 @@
 
 import sys, youtube_dl
 
-if len(sys.argv) == 2:
+if len(sys.argv) == 3:
     
     # video_url = sys.argv[1]
 
@@ -25,11 +25,12 @@ if len(sys.argv) == 2:
     # download_ytvid_as_mp3()
 
     video_url = sys.argv[1]
+    result_name = sys.argv[2]
 
     def download_ytvid_as_mp4():
         
         video_info = youtube_dl.YoutubeDL().extract_info(url = video_url,download=False)
-        filename = f"{video_info['title']}.mp4"
+        filename = f"{result_name}.mp4"
         options={
             'format':'best',
             'keepvideo':False,
