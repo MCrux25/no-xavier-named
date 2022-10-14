@@ -42,4 +42,4 @@ if len(sys.argv) == 3:
     
     download_ytvid_as_mp4()
 else:
-    print ("Introduce una url.")
+    print ("Introduce la información así: python yt-download.py route result_name")
