@@ -1,3 +1,8 @@
+import os
+from playsound import playsound
+from PIL import Image
+import time, msvcrt
+
 class gatx:
     def __init__(self,name,sex,type,personality):
         print (f'Generando un gatx llamadx {name}, {sex}, de tipo {type}, y con una personalidad {personality}')
@@ -16,36 +21,34 @@ class gatx:
         while i <= maullidos:
             sum = sum + 1
             i = i + 1            
-            from playsound import playsound
             if self.personality == "amigable":    
                 print (f"Miaw {sum}")
-                playsound (r'Personal\programa_gatx\recursos\sonidos\amigable.mp3')
+                playsound ('recursos/sonidos/amigable.mp3')
             elif self.personality == "verguerx":
                 print (f"Iggggg {sum}")    
-                playsound (r'Personal\programa_gatx\recursos\sonidos\verguera.mp3')
+                playsound ('recursos/sonidos/verguera.mp3')
             elif self.personality == "solitarix":
                 print (f"Meaw {sum}")    
-                playsound (r'Personal\programa_gatx\recursos\sonidos\solitario.mp3')
+                playsound ('recursos\sonidos\solitario.mp3')
             elif self.personality == "jugueton(a)":
                 print (f"M i a u {sum}")    
-                playsound (r'Personal\programa_gatx\recursos\sonidos\jugueton.mp3')
+                playsound ('recursos\sonidos\jugueton.mp3')
             elif self.personality == "mamon(a)":
                 print (f"Miau con desprecio {sum}")    
-                playsound (r'Personal\programa_gatx\recursos\sonidos\mamon.mp3')
+                playsound ('recursos\sonidos\mamon.mp3')
 
     def camina(self, pasos):
-        from PIL import Image
         if self.sex == "macho":            
             print(f"Caminando {pasos} pasos")            
-            m = Image.open(r'Personal\programa_gatx\recursos\imagenes\macho.jpg')
+            m = Image.open("recursos\imagenes\macho.jpg")
             m.show()
         elif self.sex == "hembra":
             print(f"Caminando {pasos} pasos")            
-            h = Image.open(r'Personal\programa_gatx\recursos\imagenes\hembra.jpg')
+            h = Image.open("recursos\imagenes\hembra.jpg")
             h.show()
         elif self.sex == "te vale":
             print(f"Caminando {pasos} pasos")            
-            alv = Image.open(r'Personal\programa_gatx\recursos\imagenes\alv.jpg')
+            alv = Image.open("recursos/imagenes/alv.jpg")
             alv = alv.convert('L')
             alv.show()
         
@@ -57,11 +60,9 @@ class gatx:
             sum = sum + 1
             i = i + 1
             print (f"Prrr {sum}")            
-            from playsound import playsound
-            playsound (r"Personal\programa_gatx\recursos\sonidos\gato_ronroneo.mp3")
+            playsound ('recursos\sonidos\gato_ronroneo.mp3')
 
     def dormir(self):
-        import time, msvcrt   
         t0 = time.time()
         t0 = int(t0)
         print("DURMIENDO...")
