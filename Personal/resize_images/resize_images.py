@@ -18,8 +18,8 @@ if not os.path.exists(desth_path):
     os.makedirs(desth_path)
 
 # Tamaño deseado de las imágenes
-nuevo_ancho = int(input('¿Cual será el nuevo ancho de las imágenes?'))
-nuevo_alto = int(input('¿Cual será el nuevo alto de las imágenes?'))
+nuevo_ancho = int(input('¿Cual será el nuevo ancho de las imágenes? *Medida en pixeles'))
+nuevo_alto = int(input('¿Cual será el nuevo alto de las imágenes? *Medida en pixeles'))
 
 def resize():
     for filename in tqdm(os.listdir(source_path)):
